@@ -1,6 +1,6 @@
 # C/C++ Compiler Toolchain
 
-![](C:\Users\gabri\source\repos\Bofa-Guide\C++\Pictures\C++_CompilerToolchain.PNG)
+![CompilerToolChain1](Pictures\C++_CompilerToolchain.PNG)
 
 At the top level, the programmer writes and creates a **source file** or a `.c` file where all code is stored. In C++, this source file becomes a `.cpp` file. When we compile the source file, it is first submitted to the preprocessor for code substitutions. The **preprocessor** will replace `#include` codes with code from the header file and macros defined by `#define`. After substituting the codes, the preprocessor generates the `.i` file. This is also called **translation**. Basically, after translation, each individual file is now known as a **translation unit**.
 
@@ -22,4 +22,4 @@ The executable file is a complete object file with references to external subrou
 
 The final step of this process is to load the executable file into main memory so that the program can run. The loader is in charge of this process. After loading the executable file into main memory, the program can finally run.
 
-![](C:\Users\gabri\source\repos\Bofa-Guide\C++\Pictures\C++_CompilerToolchain2.PNG)
+![Compiler Toolchain 2](Pictures\C++_CompilerToolchain2.PNG)
