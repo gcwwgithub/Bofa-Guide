@@ -2,13 +2,13 @@
 
 ![Compiler Toolchain](Pictures/C++_CompilerToolchain.PNG)
 
+
+
 ## Preprocessor
 
 At the top level, the programmer writes and creates a **source file** or a `.c` file where all code is stored. In C++, this source file becomes a `.cpp` file. When we compile the source file, it is first submitted to the preprocessor for code substitutions. The **preprocessor** will replace `#include` codes with code from the header file and macros defined by `#define`. After substituting the codes, the preprocessor generates the `.i` file. This is also called **translation**. Basically, after translation, each individual file is now known as a **translation unit**.
 
 
-
----
 
 ## Compiler
 
@@ -16,9 +16,7 @@ The `.i` file contains substituted code written in the source language which is 
 
 
 
----
-
-## Assembler & Linker
+## `Assembler `& Linker
 
 The `.s` file is then passed to the **assembler **for further processing which converts the `.s` file into `.o` file. The `.o` file is an incomplete object file as it does not contain references to external subroutines and therefore cannot be executed directly by the operating system. When we execute a program for the first time, the .o file is passed through a linker which performs linking and generates a linked version of the program and writes it into an executable file or a `.exe` file. It will link other files with other files to create the final executable file.
 
@@ -30,13 +28,13 @@ gcc sin.o - sin,out -lm
 
 
 
----
-
 ## Libraries
 
 ### Static Library
 
 The other files mentioned earlier are commonly known as **library files**. There are two types of library files. A library is a collection of precompiled object files which can be linked into programs. Libraries are typically stored in special archive files with extension `.a` , referred to as **static libraries**. They are created from object files with a separate tool, the GNU archiver ar , and used by the linker to resolve references to functions at compile-time. In C, the math portion of the C standard library is stored in a separate static library. This is for some historical reasons. The functions in the math library are declared in header file `<math.h>`.However, again for historical reasons, gcc does not automatically link libm.a.
+
+
 
 ### DLL
 
@@ -46,13 +44,9 @@ The executable file is a complete object file with references to external subrou
 
 
 
----
-
 ## Loader
 
 The final step of this process is to load the executable file into main memory so that the program can run. The loader is in charge of this process. After loading the executable file into main memory, the program can finally run.
-
-
 
 
 
