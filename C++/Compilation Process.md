@@ -16,7 +16,7 @@ The `.i` file contains substituted code written in the source language which is 
 
 
 
-## `Assembler `& Linker
+## Assembler & Linker
 
 The `.s` file is then passed to the **assembler **for further processing which converts the `.s` file into `.o` file. The `.o` file is an incomplete object file as it does not contain references to external subroutines and therefore cannot be executed directly by the operating system. When we execute a program for the first time, the .o file is passed through a linker which performs linking and generates a linked version of the program and writes it into an executable file or a `.exe` file. It will link other files with other files to create the final executable file.
 
